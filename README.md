@@ -1,8 +1,9 @@
 SungardAS
 =========
+```
 POC FE client retrieve JSON data from servers (RoR and NodeJS)
 Both have the same funtionality, invoke the same SOAP endpoint
-=============
+```
 Contains 4 projects 
 -------------------
 ```
@@ -13,7 +14,7 @@ Contains 4 projects
 ```
 
 Ports
-=====
+-----
 ```
 AngularClient - runs on port 9000
 SoapServerRails - rack server port 9292
@@ -21,9 +22,9 @@ SoapServerNode - port 3000
 ```
 
 Install and Run
-===============
-```
+---------------
 SoapServerRails - logs to  log/development.log
+```
 1. bundle install (no DB or views)
 2. rackup - starts up on port 9292
 ```
