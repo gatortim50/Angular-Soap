@@ -1,0 +1,31 @@
+<div class="container" ng-controller="SoapCtrl">
+
+
+<form name="soapForm" style="text-align:center" novalidate>
+
+  <div>
+
+    <h4>Enter Zip Code
+    <input type="text" placeholder="Zip" ng-model="zipcode"
+           ng-minlength="5" maxlength="5" size="5">
+    </h4>
+
+
+    <input type="text" placeholder="City" ng-model="city"
+           ng-minlength="10" maxlength="10" size="10" ng-readonly="city">
+    <input type="text" placeholder="State" ng-model="state"
+           ng-minlength="2" maxlength="2" size="2" ng-readonly="state">
+    <input type="text" placeholder="Area" ng-model="area_code"
+           ng-minlength="3" maxlength="3" size="3" ng-readonly="area_code">
+  </div>
+
+  <button class="btn btn-primary" type="reset" ng-click="soapForm.$setPristine()">Reset</button>
+  <button type="submit" id="submit_button" class="btn btn-success btn-primary" ng-click="doSubmit(zipcode)">
+    Submit
+  </button>
+
+  <!-- tt>{{soapForm | json}}</tt><br/ -->
+</form>
+
+
+</div>
